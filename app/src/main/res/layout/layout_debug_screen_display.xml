@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.DebugScreenDisplayActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="XORC: debug.ScreenDisplay" />
+
+    <TextView
+        android:id="@+id/text_yyyy_mm_dd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:padding="10dp"
+        android:text="YYYY-MM-DD"
+        android:textAlignment="textStart"
+        android:textColor="#00aaff"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/text_hh_mm_ss"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:padding="20dp"
+        android:text="88:88:88"
+        android:textAlignment="center"
+        android:textColor="#00aaff"
+        android:textSize="50dp" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="调整屏幕亮度" />
+
+    <SeekBar
+        android:id="@+id/seek_bar_screen_brightness"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="99"
+        android:min="1"
+        android:padding="20dp"
+        android:scrollbarSize="10dp" />
+
+    <Switch
+        android:id="@+id/switch_keep_screen_on"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:text="保持屏幕长亮" />
+
+</LinearLayout>
